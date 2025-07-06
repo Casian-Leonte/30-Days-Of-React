@@ -37,3 +37,31 @@ function bmiCalc(weightKg: number, height: number): string{
     }
 }
 
+// 6)
+function checkSeason(month: string): string{
+    let seasonAutumn = ["September", "October", "November"];
+    let seasonWinter = ["December", "January", "February"];
+    let seasonSpring = ["March", "April", "May"];
+    let seasonSummer = ["June", "July", "August"];
+    let season = "";
+
+    for(let i = 0; i < 3; i ++){
+        if(month == seasonAutumn[i]){
+            season = "Autumn";
+        }
+        else if (month == seasonWinter[i]){
+            season = "Winter";
+        }
+        else if (month == seasonSpring[i]){
+            season = "Spring";
+        }
+        else if (month == seasonSummer[i]){
+            season = "Summer";
+        }
+        else{
+            season = "Invalid input";
+        }
+    }
+    return season;
+}
+
